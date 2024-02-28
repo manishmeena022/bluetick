@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Blogs from './components/Blogs.jsx';
+import Connect from './components/Connect.jsx';
+import Footer from './components/Footer.jsx';
+import HeroSection from './components/HeroSection.jsx';
+import Offer from './components/Offer.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* Hero section at the top of the page */}
+      <HeroSection />
+      
+      {/* Offer section displaying what the website offers */}
+      <Offer />
+      
+      {/* Blogs section displaying latest articles or blog posts */}
+      <Blogs />
+      
+      {/* Connect section for users to connect with support */}
+      <Connect />
+      
+      {/* Footer section containing company information and social links */}
+      <Footer />
+    </>
   );
 }
 
